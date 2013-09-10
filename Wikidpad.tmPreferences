@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
   <key>name</key>
-  <string>Wiki</string>
+  <string>Wikidpad</string>
 
   <key>scope</key>
-  <string>keyword.control.header.Wiki, string.markup.underline.link.internal.Wiki</string>
+  <string>keyword.control.header.Wikidpad, string.markup.underline.link.internal.Wikidpad</string>
   
   <key>settings</key>
   <dict>

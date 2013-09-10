@@ -4,19 +4,17 @@
 <dict>
 	<key>fileTypes</key>
 	<array>
-		<string>wiki</string>
-		<string>sublime-wiki</string>
-		<string>swiki</string>
+		<string>Wiki</string>
 	</array>
 	<key>name</key>
-	<string>Wiki</string>
+	<string>Wikidpad</string>
 	<key>patterns</key>
 	<array>
 		<dict>
 			<key>match</key>
 			<string>^\s*(\w+.+:\s*$\n?)</string>
 			<key>name</key>
-			<string>keyword.control.header.Wiki</string>
+			<string>keyword.control.header.Wikidpad</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -24,7 +22,7 @@
 			<key>match</key>
 			<string>([A-Z][a-z]+){2,}</string>
 			<key>name</key>
-			<string>string.markup.underline.link.internal.Wiki</string>
+			<string>string.markup.underline.link.internal.Wikidpad</string>
 		</dict>		
 		<dict>
 			<key>comment</key>
@@ -32,7 +30,7 @@
 			<key>match</key>
 			<string>((?:https?|ftp)://\S+)</string>
 			<key>name</key>
-			<string>markup.underline.link.external.Wiki</string>
+			<string>markup.underline.link.external.Wikidpad</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -42,7 +40,7 @@
 			<key>end</key>
 			<string>"</string>
 			<key>name</key>
-			<string>string.quoted.double.Wiki</string>
+			<string>string.quoted.double.Wikidpad</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -52,7 +50,7 @@
 			<key>end</key>
 			<string>`</string>
 			<key>name</key>
-			<string>string.quoted.code.Wiki</string>
+			<string>string.quoted.code.Wikidpad</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -60,7 +58,7 @@
 			<key>match</key>
 			<string>(\*\*|__)(.*?)(\*\*|__)</string>
 			<key>name</key>
-			<string>markup.bold.Wiki</string>
+			<string>markup.bold.Wikidpad</string>
 		</dict>
 		<dict>
 			<key>comment</key>
@@ -68,12 +66,12 @@
 			<key>match</key>
 			<string>\b(\*|_)(\*\*|[^\*_])+?(\*|_)\b</string>
 			<key>name</key>
-			<string>markup.italic.Wiki</string>
+			<string>markup.italic.Wikidpad</string>
 		</dict>
 	</array>
 	<key>scopeName</key>
-	<string>source.Wiki</string>
+	<string>source.Wikidpad</string>
 	<key>uuid</key>
-	<string>14883dd8-b120-4a1e-a4c5-67c5e7815344</string>
+	<string>bcecdb74-55ec-4f6e-9f3d-0fdf1fc605e9</string>
 </dict>
 </plist>

@@ -14,18 +14,18 @@ class WikiLinkCommand(sublime_plugin.TextCommand):
         word = self.view.substr(self.view.word(location.a)).replace("*", "")
         scope = self.view.substr(self.view.extract_scope(location.a)).replace("*", "")
 
-        if "link.external.Wiki" in self.view.scope_name(location.a):
+        if "link.external.Wikidpad" in self.view.scope_name(location.a):
                 sublime.status_message("try to open " + scope)
                 sublime.active_window().run_command('open_url', {"url": scope})
-        elif "link.email.Wiki" in self.view.scope_name(location.a):
+        elif "link.email.Wikidpad" in self.view.scope_name(location.a):
                 sublime.status_message("try to mail " + scope)
                 sublime.active_window().run_command('open_url', {"url": "mailto:"+scope})
-        elif "link.internal.Wiki" in self.view.scope_name(location.a):
+        elif "link.internal.Wikidpad" in self.view.scope_name(location.a):
             #okay, we're good. Keep on keepin' on.        
             
             #compile the full file name and path.
 
-            new_file = directory+slash+word+".wiki"
+            new_file = directory+slash+word+".Wiki"
             #debug section: uncomment to write to the console
             # print "Location: %d" % location.a
             # print "Selected word is '%s'" % word
@@ -45,7 +45,7 @@ class WikiLinkCommand(sublime_plugin.TextCommand):
                 default_text = "{0}\nWrite about {0} here.".format(word)
                 new_view.insert(new_edit,0,default_text)            
                 new_view.end_edit(new_edit)
-                new_view.set_name("%s.wiki" % word)
-                new_view.set_syntax_file("Packages/Wiki/Wiki.tmLanguage")
+                new_view.set_name("%s.Wiki" % word)
+                new_view.set_syntax_file("Packages/Wikidpad/Wikidpad.tmLanguage")
         else:
             sublime.status_message("Can only open WikiWords, email addresses or web addresses.")
