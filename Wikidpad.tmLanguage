@@ -20,7 +20,7 @@
 			<key>comment</key>
 			<string>Match WikiWords and make them into links.</string>
 			<key>match</key>
-			<string>([A-Z][a-z]+){2,}</string>
+			<string>(\b)([A-Z]+[a-z]+){2,}+(([A-Z]*)+([0-9]*))</string>
 			<key>name</key>
 			<string>string.markup.underline.link.internal.Wikidpad</string>
 		</dict>		
